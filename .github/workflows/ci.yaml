@@ -2,10 +2,10 @@ name: ci-workflow
 on:
    push:
      branches:
-       -main
+       - main
    pull:
      branches:
-       -main
+       - main
 jobs:
   build:
     run-on: ubuntu-latest
