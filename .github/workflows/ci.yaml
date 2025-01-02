@@ -1,5 +1,4 @@
 name: ci-workflow
-
 on:
   push:
     branches:
@@ -7,18 +6,14 @@ on:
   pull_request:
     branches:
       - main
-
 jobs:
   build:
     runs-on: ubuntu-latest
-    
     steps:
       - name: Welcome step
         run: echo "Welcome to GitHub"
-
       - name: Checkout repository
         uses: actions/checkout@v4
-
       - name: Repository Information
         run: |
           echo "Repository Name: ${{ github.repository }}"
